@@ -176,7 +176,7 @@ func CreateAndOpenLogFiles(config *config.Config, now time.Time, command *Comman
 		tag = "_+" + clamp(util.FilenameSafe(command.Comment), 32)
 	}
 
-	now = now.Local()
+	//now = now.Local()
 
 	const M = "@@@"
 	f := fmt.Sprintf("%s%s/%04d/%02d/%02d/%02d-%02d-%02d.%03d-%05d%s_+%s.log",
